@@ -1,8 +1,8 @@
 <?php
 echo 'hello php!';
-$a = 3;
-$b = 7;
-echo $a + $b;
+$a=3;
+$b=7;
+echo $a+$b;
 $array_month = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
 echo $array_month[7];
 $hello='Hello,';
@@ -27,4 +27,30 @@ $calendar_2018 = [
   "December" => "12月"
 ];
 echo $calendar_2018["December"];
-
+$a = 3;
+$b = 3;
+$c = "3";
+var_dump($a == $b);
+$name="N.koutarou";
+if ($name="N.koutarou"){
+    echo "私は あなたの名前 です";
+}else{
+    echo "あなたの名前ではありません";
+}
+$total=0;
+for($i=0;$i<=1000;$i++){
+    $total +=$i;
+}
+echo $total;
+$fruits= array("apple","orange","strawberry","cherry","banana");
+foreach($fruits as $fruits){
+    echo $fruits;
+    echo ".";
+}
+$start = 1;
+$end = 100;
+for($i = $start; $i <=$end; $i++){
+if($i % 5 == 0){
+    echo $i;
+  }
+}
