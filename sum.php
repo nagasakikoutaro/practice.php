@@ -1,14 +1,27 @@
 <?php
+//課題1
 function double($i){
     return $i*2;
 }
 echo double(20);
+echo "\n";
+//課題2
 function add($a, $b) {
     return $a + $b;
 }
 echo add(1,2);
-$arr=array(1, 3, 5 ,7, 9) ;
-echo array_product ($arr);
+echo "\n";
+//　課題3
+function multiply($arr){
+   $result=1;
+   foreach($arr as $a){
+$result*=$a;
+}
+ return $result;
+}
+echo multiply ([1, 3, 5 ,7, 9]); 
+echo "\n";
+// 課題4
 function max_array($arr){
     $max_number = $arr[0];
     foreach($arr as $a){
@@ -21,10 +34,13 @@ function max_array($arr){
     return $max_number;
  }
  echo max_array([1,3,5,7,9]);
+ echo "\n";
+// 課題5
 $test = '<p>Test.</p><aaaaaaaa> <a href="#">kadai</a>';
 echo strip_tags($test);
 echo "\n";
 echo strip_tags($test, '<p><a>');
+ echo "\n";
 $kadai2 = array("orange", "banana");
 array_push($kadai2, "apple", "raspberry");
 print_r($kadai2);
